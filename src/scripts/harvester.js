@@ -20,7 +20,7 @@ const seedObjArray = [];
 // output value (only takes seeds = 1/2 output for corn).
 const collectSeeds = (plantObj) => {
     // console.log("Plant: ", plantObj.type);
-    let outVal = Number(plantObj.output); // ----- changes the output value to an integer so we can iterate up to it
+    let outVal = plantObj.output; // ----- changes the output value to an integer so we can iterate up to it
     if (plantObj.type === "Corn"){
         // Identified corn plantObj. Only take 1/2 output seeds
         // console.log("Corn plantObj identified -- outVal: ", outVal);

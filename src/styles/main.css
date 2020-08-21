@@ -34,3 +34,18 @@ h1,h2,h3,h4,h5,h6 {
     background-color: darksalmon;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background: darkcyan;
+    justify-content: space-around;
+    float: left;
+}
+
+.container section {
+    /* width: 30px; */
+    flex: 2 0 10%;
+    /* margin: 0px 5px; */
+    padding: 10px;
+    background: wheat;
+}

@@ -1,14 +1,10 @@
 console.log("Welcome to the main module")
 
 import {createPlan} from './plan.js';
-import { createAsparagus } from './seeds/asparagus.js';
-import { createCorn } from './seeds/corn.js';
-import { createPotato } from './seeds/potato.js';
 import { addPlant, usePlants} from './field.js';
 import { plantSeeds } from './tractor.js';
-
 import { harvestPlants } from './harvester.js';
-
+import { Catalog } from './catalog.js';
 
 // ------- seed creation ----------
 //const asparagusSeed = createAsparagus();
@@ -51,3 +47,5 @@ const cropYield = harvestPlants(field);
 console.log("Yield from harvest:");
 console.log(cropYield);
 
+// ------- Display Food Catalog -------
+Catalog(cropYield);
